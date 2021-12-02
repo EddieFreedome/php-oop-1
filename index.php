@@ -37,7 +37,7 @@
     $newMovie = new Movie("L'esorcista", "Horror", "230min", "Francis Ford Coppola");
     // var_dump($newMovie);
 
-    $newMovie = new Movie("Il Padrino", "Gangster", "210min", "Francis Ford Coppola");
+    $newMovie2 = new Movie("Il Padrino", "Gangster", "210min", "Francis Ford Coppola");
 
     // $newMovie = new Movie("Dora l'esploradora", );
 
@@ -55,14 +55,20 @@
 </head>
 <body>
     <main>
-        <ul>
-            <ul class="main-container"><?php echo $newMovie->getTitle() ?> 
-                <li class="main-container"><?php echo $newMovie->getGenre() ?> </li>
-                <li class="main-container"><?php echo $newMovie->getDuration() ?> </li>
-                <li class="main-container"><?php echo $newMovie->getDirector() ?> </li>
-        
-            </ul>
+        <h1><?php echo $newMovie->getTitle() ?> </h1>
+        <ul class="main-container">
+            <li class="main-container"><?php echo $newMovie->getGenre() ?> </li>
+            <li class="main-container"><?php echo $newMovie->getDuration() ?> </li>
+            <li class="main-container"><?php echo $newMovie->getDirector() ?> </li>
         </ul>
+
+        <h1><?php echo $newMovie2->getTitle() ?> </h1>
+        <ul class="main-container">
+            <li class="main-container"><?php echo $newMovie2->getGenre() ?> </li>
+            <li class="main-container"><?php echo $newMovie2->getDuration() ?> </li>
+            <li class="main-container"><?php echo $newMovie2->getDirector() ?> </li>
+        </ul>
+
     </main>
 </body>
 </html>
